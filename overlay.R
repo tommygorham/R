@@ -81,17 +81,5 @@ selected_cols = c('USA_Cumulative', "people_fully_vaccinated")
 df_melt <- melt (TB1, measure.vars=selected_cols, value.names="Values", variable.name="variable")
 plot <- ggplot(df_melt, aes(x=date, y=value, color=variable)) +stat_smooth(span=0.15)
 
-
-
-
 PLOT_dailycases+ geom_point() +stat_smooth(span=0.3) + ggtitle("USA")+
   ylab("Daily Cases") + xlab("Date")
-
-
-
-
-
-
-
-
-
