@@ -45,16 +45,10 @@ row.names(TB1) = TB1$date
 TB1 = TB1[-1,]
 TB1
 
-
-
 ##to remove NA
 #TB1CLEANED <- na.omit(TB1)
 
-
-
-#normalize / statistics
-#remove first row
-
+#normalize / statistics, remove first row
 TB2 <- TB1 %>% dplyr::select(2,6)
 TBSCALED <- data.frame( scale(TB2))
 #add data column back
