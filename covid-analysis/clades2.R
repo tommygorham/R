@@ -1,6 +1,4 @@
-nalyze the COVID19 variant data downloaded from GISAID and generate two figures
-# based on the GISAID SARS-COV-2 clade information can be found at 
-
+# program description: Similar to clades1.R, however generates an HTML and a pie chart
 ```{r}
 rm( list=ls()) 
 library(tidyverse)
