@@ -1,9 +1,12 @@
-library(dplyr) 
-library(lubridate) #ymd
-library(ggplot2) #for plotting and creating graphics
-library(tidyverse) #read_csv()
-library(reshape2)#melt()
+# program description: Overlay COVID19 Daily Cases with Fully Vaccinated 
 
+rm( list=ls()) #Removes all of the objects that are present in the workspace. 
+
+library(dplyr)     #select, filter 
+library(lubridate) #ymd
+library(ggplot2)   #for plotting and creating graphics
+library(tidyverse) #read_csv()
+library(reshape2)  #melt()
 
 #Get Data
 DATA_cumulative_cases <- read_csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/jhu/total_cases.csv")
@@ -53,14 +56,6 @@ TB2 <- TB1 %>% dplyr::select(2,6)
 TBSCALED <- data.frame( scale(TB2))
 #add data column back
 TBSCALED$date = ymd(row.names(TB1$date))
-
-#####
-#plots
-
-#not the best method so far for voerlay
-# ggplot()+
-  #geom_point(data = TB1,mapping =  aes( x=date, y=TB1[,2]), color="blue")+
-  #geom_line(data = TB1,mapping =  aes( x=date, y=TB1[,6]), color="green")
 
 #melt method from class -- change to z score before this plot
 names(TB1)
