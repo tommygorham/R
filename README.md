@@ -8,6 +8,5 @@ See [this README.md](https://github.com/tommygorham/R/blob/master/covid-analysis
 * The Clade.R files
 * The Google Mobility Data
 
-***This was competed for the Graduate Course CPSC 5180 at the University of Tennessee at Chattanooga.***
 
 [Hyperlink to coding stream video](https://youtu.be/zuBTSJ_N6go)
