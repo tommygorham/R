@@ -1,4 +1,4 @@
-#program description: Compare COVID CASES of two counties in the USA 
+#program description: Compare Cumulative COVID CASES of two counties in the USA 
    rm( list=ls()) # clean workspace
   # for dataframe manipulation
    library(tidyverse)

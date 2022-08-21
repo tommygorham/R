@@ -1,4 +1,7 @@
-#Overlay 1-3.R
-These programs investigate and generate figure(s) that overlay the COVID19 daily cases in a country 
-with the average Google Global Mobility data. 
+#Overlay Files
+These programs investigate cumulative and daily COVID19 Cases in Global Countries and USA Counties,
+and overlay them with the average Google Global Mobility data.  
 
+# Clade Files
+
+clade2.R generates an HTML file. 
